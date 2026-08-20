@@ -42,14 +42,14 @@ try:
     ActionChains(driver).key_down(Keys.CONTROL).send_keys(Keys.F9).key_up(Keys.CONTROL).perform()
     
     # --- NUEVA CÁMARA ESPÍA ---
-    time.sleep(180) # Espera 5 segundos a ver si sale un cartel
+    time.sleep(30) # Espera 5 segundos a ver si sale un cartel
     print("¡Tomando foto de la escena del crimen!")
     driver.save_screenshot('captura_colab.png')
     # --------------------------
     
     # 5. TIEMPO DE ESPERA VITAL
     print("Esperando a que el scraper termine su trabajo...")
-    time.sleep(900) # 900 segundos (15 minutos). ¡Ajusta esto según lo que tarde tu scraper!
+    time.sleep(60) # 900 segundos (15 minutos). ¡Ajusta esto según lo que tarde tu scraper!
     print("¡Trabajo terminado, mi bro!")
 
 except Exception as e:
