@@ -49,7 +49,7 @@ try:
     
     # 5. TIEMPO DE ESPERA VITAL
     print("Esperando a que el scraper termine su trabajo...")
-    time.sleep(150) # 900 segundos (15 minutos). ¡Ajusta esto según lo que tarde tu scraper!
+    time.sleep(60) # 900 segundos (15 minutos). ¡Ajusta esto según lo que tarde tu scraper!
     print("¡Trabajo terminado, mi bro!")
 
 except Exception as e:
