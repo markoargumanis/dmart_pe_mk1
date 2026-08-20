@@ -25,3 +25,10 @@ jobs:
 
       - name: Despertar al Clickeador Mágico
         run: python clicker.py
+
+      - name: Subir captura de pantalla
+        uses: actions/upload-artifact@v4
+        if: always() # Para que suba la foto incluso si hay un error
+        with:
+          name: Evidencia-Colab
+          path: captura_colab.png
